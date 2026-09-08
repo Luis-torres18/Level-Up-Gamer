@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Carrito de Compras | Level-Up Gamer</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="inicio.html" class="logo-link">
+        <span class="brand-title">LEVEL-UP <span>GAMER</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="inicio.html#catalogo">Productos</a></li>
+          <li><a href="carrito.html" class="active">Carrito</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-actions">
+        <div id="auth-nav-container" class="auth-links">
+          <a href="login.html">Iniciar sesión</a> | 
+          <a href="registro.html">Registrarse</a>
+        </div>
+        <a href="carrito.html" class="cart-button cart-count">Carrito (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-main">
+    <h1 style="font-family: var(--font-title); margin-bottom: 2rem; font-size: 2rem;">MI CARRITO DE COMPRAS</h1>
+
+    <div class="cart-layout">
+      
+      <section class="cart-items-container" id="cart-items-wrapper">
+    
+      </section>
+
+      <aside class="cart-summary">
+        <h2>RESUMEN DEL PEDIDO</h2>
+        
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Descuento</span>
+          <span id="cart-discount">$0</span>
+        </div>
+
+        <div class="summary-total">
+          <span>TOTAL:</span>
+          <span id="cart-total">$0</span>
+        </div>
+
+        <button type="button" id="btn-pagar" class="btn-checkout" style="margin-top: 1.5rem;">Pagar Pedido</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Level-Up - Todos los derechos reservados.</p>
+      <p>Desarrollo Web - Duoc UC</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/datos.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/carrito.js"></script>
+</body>
+</html>
