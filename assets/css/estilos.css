@@ -297,7 +297,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   width: 100%;
-  max-width: 600px;
+  max-width: 520px;
   padding: 2.5rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
@@ -368,7 +368,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  justify-content: center;
 }
 
 .btn-submit {
