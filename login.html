@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión | Level-Up Gamer</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="inicio.html" class="logo-link">
+        <span class="brand-title">LEVEL-UP <span>GAMER</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="inicio.html#catalogo">Productos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-actions">
+        <div id="auth-nav-container" class="auth-links">
+          <a href="login.html" class="active">Iniciar sesión</a> | 
+          <a href="registro.html">Registrarse</a>
+        </div>
+        <a href="carrito.html" class="cart-button cart-count">Carrito (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="form-page-main">
+    <section class="form-wrapper">
+      <div class="form-header">
+        <h1>INICIO DE SESIÓN</h1>
+        <p>Accede con tus credenciales registradas</p>
+      </div>
+
+      <form id="form-login" novalidate>
+        <div class="form-group">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.cl">
+          <span class="form-hint">Correo con el cual te registraste en la plataforma.</span>
+          <span id="error-correo" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="••••••••">
+          <span class="form-hint">Ingresa tu clave de acceso.</span>
+          <span id="error-contrasena" class="error-message"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Ingresar a mi cuenta</button>
+
+        <p class="form-footer-link">
+          ¿Aún no tienes cuenta? <a href="registro.html">Crea una cuenta aquí</a>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Level-Up Gamer - Todos los derechos reservados.</p>
+      <p>Desarrollo Web - Duoc UC</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/datos.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
